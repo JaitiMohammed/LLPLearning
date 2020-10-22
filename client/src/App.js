@@ -1,19 +1,21 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/layouts/Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
-// import Landing from "./components/Landing";
-
+import { Landing } from "./components/layouts/Landing/Landing";
+import { Menu } from "./components/layouts/Navbar/Navbar";
+import About from "./pages/About";
+import Team from "./pages/Team";
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Navbar />
-        {/* <Landing /> */}
+        <Menu />
+        <Landing />
+        <About />
+        <Team />
       </Router>
       {/* Navbar */}
       {/* Header Landing Page */}
-      {/* Section About */}
       {/* Section Services */}
       {/* Section Last Posts */}
       {/* Section Last Courses */}

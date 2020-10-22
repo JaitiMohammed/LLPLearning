@@ -1,0 +1,131 @@
+#intro {
+    position: relative;
+    overflow: hidden;
+    max-height: 655px;
+    padding-top: 7em;
+}
+
+#intro .top-right-gradient {
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    width: 800px;
+    height: 600px;
+    background: url('../../../assets/OthersPictures/imgTopRight.png') no-repeat;
+}
+
+#intro .intro-left {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    padding: 3em 0;
+}
+
+#intro .intro-left h1 {
+    font-size: 2.5em;
+    color: #241b57;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#intro .intro-left h1:after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    content: "";
+    border-radius: 5px;
+    background: #00B3C8;
+    opacity: 0.4;
+}
+
+#intro .intro-left p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+}
+
+#intro .intro-left a.intro-cta {
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #005A64;
+    box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+}
+
+#intro .intro-right {
+    position: relative;
+    display: inline-block;
+    margin-left: 6em;
+    padding-top: 80px;
+}
+
+#intro .intro-right img {
+    max-width: 600px;
+    margin-bottom: 250px;
+    margin-top: -150px;
+}
+
+#intro .bottom-left-gradient {
+    position: absolute;
+    bottom: 10px;
+    left: -9%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(#241b57, #4bc0c8);
+}
+
+@media screen and (max-width:768px) {
+    #intro {
+        max-height: 560px !important;
+        text-align: center;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: -10px !important;
+    }
+    #intro .bottom-left-gradient {
+        display: none;
+    }
+    #intro .top-right-gradient {
+        display: none;
+    }
+    #intro .intro-right img {
+        width: 380px;
+        margin-left: -7pc;
+    }
+    #intro h1 {
+        font-size: 24px !important;
+        margin-top: 60%;
+    }
+    #intro h1::after {
+        margin-left: 180px;
+        margin-bottom: 10px;
+    }
+    #intro .intro-left .intro-cta {
+        display: inline-block !important;
+        box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+    }
+    #intro .intro-left h1 {
+        font-size: 2.5em;
+        color: #241b57;
+        line-height: 1.5em;
+        position: relative;
+        margin-bottom: 1em;
+        margin-top: 32pc;
+    }
+    #intro .intro-right img {
+        max-width: 600px;
+        margin-bottom: 530px;
+        margin-top: -178px;
+    }
+}

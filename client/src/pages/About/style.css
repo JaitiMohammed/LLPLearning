@@ -1,0 +1,125 @@
+#about {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    background-color: #3F3D56;
+}
+
+#about .about-left {
+    display: inline-block;
+}
+
+#about .about-left img {
+    padding-bottom: 17.5em;
+    max-width: 500px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#about .about-right {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    margin-left: 10em;
+}
+
+#about .about-right h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+    color: #ec4357;
+}
+
+#about .about-right h1::after {
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    content: "";
+    border-radius: 5px;
+    background: #00B3C8;
+    opacity: 0.2;
+}
+
+#about .about-right p {
+    font-size: 1.125em;
+    line-height: 1.75em;
+    color: #fff;
+}
+
+#about .about-right a.cta {
+    position: relative;
+    font-weight: 600;
+    z-index: 99;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 2em 0 1em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #00B3C8;
+}
+
+#about .top-right-gradient {
+    position: absolute;
+    z-index: -999;
+    top: 45%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#ee9ca7, #ec4357);
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #about {
+        text-align: center !important;
+        padding: 0 0.5em;
+        margin-left: -160px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #about .about-left img {
+        padding-bottom: 2.5em;
+        max-width: 337px;
+        margin-right: -155px;
+        padding-top: 33px;
+    }
+    #about .about-right {
+        display: inline-block !important;
+    }
+    #about .about-right h1 {
+        font-size: 24px !important;
+        margin-right: 56px;
+        margin-right: 50px;
+    }
+    #about .about-right h1::after {
+        margin-left: 180px;
+        margin-bottom: 10px;
+    }
+    #about .about-right p {
+        font-size: 16px !important;
+        margin-right: 46px;
+    }
+    #about .about-right a {
+        display: inline-block !important;
+    }
+    #about .top-right-gradient {
+        position: absolute;
+        z-index: -999;
+        top: 62%;
+        right: -5%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(#ee9ca7, #ec4357);
+    }
+    #about .about-right a.cta {
+        margin-right: 52px;
+    }
+}
