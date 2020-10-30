@@ -4,15 +4,18 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Landing } from "./components/layouts/Landing/Landing";
 import { Menu } from "./components/layouts/Navbar/Navbar";
 import About from "./pages/About";
-import Team from "./pages/Team";
+// import Login from "./components/Login/index";
+// import Team from "./pages/Team";
 function App() {
   return (
     <div className='App'>
       <Router>
         <Menu />
+        {/* <Route path='/login' component={Login} /> */}
+
         <Landing />
         <About />
-        <Team />
+        {/* <Team /> */}
       </Router>
       {/* Navbar */}
       {/* Header Landing Page */}

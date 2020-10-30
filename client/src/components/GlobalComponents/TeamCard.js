@@ -19,13 +19,13 @@ const TeamCard = ({ name, role, image, github, insta }) => {
                 <hr></hr>
               </div>
               <div className='social-media'>
-                <h6>
+                <span>
                   <FaGithub /> {github}
-                </h6>
-                <h6>
-                  <GrInstagram />
-                  {insta}
-                </h6>
+                </span>
+                <br />
+                <span>
+                  <GrInstagram /> {insta}
+                </span>
               </div>
             </Card.Title>
           </Col>

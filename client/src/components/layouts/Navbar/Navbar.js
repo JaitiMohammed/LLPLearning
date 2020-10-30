@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../../../assets/OthersPictures/logo.png";
 import "./Style.css";
-import { Modal, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import Login from "../../Login/index";
+// import Login from "../../Login/index";
 
 export const Menu = () => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
   return (
     <header id='header'>
       <Navbar collapseOnSelect expand='lg' className='wrapper'>
@@ -54,13 +54,13 @@ export const Menu = () => {
             </Nav.Link>
           </Nav>
           <Nav className='menu-right'>
-            <Link className='menu-cta' onClick={handleShow}>
+            <Link className='menu-cta' to='/login'>
               {" "}
               Sign In
             </Link>{" "}
           </Nav>
 
-          <Modal show={show} onHide={handleClose}>
+          {/* <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>Sign-In Now</Modal.Title>
             </Modal.Header>
@@ -73,7 +73,7 @@ export const Menu = () => {
                 <Link to='/register'>here</Link>
               </p>
             </Modal.Footer>
-          </Modal>
+          </Modal> */}
         </Navbar.Collapse>
       </Navbar>
     </header>
