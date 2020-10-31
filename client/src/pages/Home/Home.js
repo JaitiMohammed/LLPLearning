@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { Menu } from "../../components/layouts/Navbar/Navbar";
 
 const Home = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-  return <></>;
+  return (
+    <>
+      <Menu />
+    </>
+  );
 };
 
 export default Home;

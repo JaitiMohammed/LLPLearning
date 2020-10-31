@@ -1,10 +1,15 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home/Home";
 function App() {
   return (
     <div className='App'>
-      {/* Navbar */}
-      {/* Hero Section */}
+      <Router>
+        <Home />
+      </Router>
+      {/* Home  */}
+
       {/* Sections - About */}
       {/* Sections - Services */}
       {/* Latest Courses */}

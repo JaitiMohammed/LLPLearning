@@ -6,13 +6,22 @@ li {
     list-style-type: none !important;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: .5rem 1rem; */
+}
+
 /* Logo - Menu Navigation  */
 
 header {
     position: absolute;
     z-index: 999;
     width: 100%;
-    padding: 1.5em 0;
+    /* padding: 0.5em 0; */
 }
 
 @media screen and (max-width:768px) {
@@ -24,27 +33,26 @@ header {
         justify-content: space-between;
         padding: 1.5rem 2rem;
     }
-    header {
+    /* header {
         padding: 0 !important;
-        background: #fff;
         margin-top: -18px;
-    }
+    } */
 }
 
-.wrapper {
+/* .wrapper {
     width: 100%;
     max-width: 1100px;
     margin: 15px auto;
-}
+} */
 
-header img {
+.navbar img {
     float: left;
     width: 200px;
-    margin-left: -12px;
+    margin-left: 15px;
     padding: 13px 80px 20px 0;
 }
 
-header Nav.menu-left {
+/* header Nav.menu-left {
     float: left;
 }
 
@@ -56,40 +64,39 @@ header Nav.menu-left Nav.Link {
 header Nav.menu-left Nav.Link a {
     color: #4d4d4d;
     transition: ease-in 0.2s;
-}
+} */
 
 .menu-left a a:hover {
-    color: #005A64;
     border-bottom: #005A64 solid 2px;
 }
 
-header Nav.menu-right {
-    float: right;
+.menu-left a a:active {
+    border-bottom: #c2b500 solid 2px;
 }
+
+.menu-left a {
+    font-size: 18px;
+}
+
+/* header Nav.menu-right {
+    float: right;
+} */
 
 .menu-cta {
     width: 150px;
     margin-top: 0.7em;
+    margin-right: 20px;
     padding: 0.5em;
     transition: 0.3s all ease;
     text-align: center;
     border-radius: 3px;
     background: white;
+    color: black;
     box-shadow: 2px 4px 9px 1px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
 }
 
-header Nav.menu-right li.menu-cta {
+/* header Nav.menu-right li.menu-cta {
     font-weight: 500;
     color: #005A64;
-}
-
-.modal-footer {
-    /* display: flex; */
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0.75rem;
-    border-top: 1px solid #dee2e6;
-    border-bottom-right-radius: calc(.3rem - 1px);
-    border-bottom-left-radius: calc(.3rem - 1px);
-}
+} */
