@@ -1,0 +1,8 @@
+#sticky-footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(13, 96, 144);
+    color:#fff;
+}
