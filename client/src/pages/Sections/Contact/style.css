@@ -1,0 +1,6 @@
+#contact {
+    position: relative;
+    overflow: hidden;
+    min-height: 650px;
+    background: url('../../../assets/LayoutsPic/5.png') no-repeat;
+}

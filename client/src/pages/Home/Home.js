@@ -1,12 +1,20 @@
 import React from "react";
-import Footer from "../../components/layouts/Footer/Footer";
-import { Menu } from "../../components/layouts/Navbar/Navbar";
+import Landing from "../../components/layouts/HeroSection/Landing";
+// import Footer from "../../components/layouts/Footer/Footer";
+import About from "../Sections/About/About";
+import Contact from "../Sections/Contact/Contact";
+import Services from "../Sections/Services/Services";
+import Team from "../Sections/Team/Team";
 
 const Home = () => {
   return (
     <>
-      <Menu />
-      <Footer />
+      <Landing />
+      <About />
+      <Team />
+      <Services />
+      <Contact />
+      {/* <Footer /> */}
     </>
   );
 };

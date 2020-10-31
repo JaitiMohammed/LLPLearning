@@ -1,0 +1,6 @@
+#service {
+    position: relative;
+    overflow: hidden;
+    min-height: 650px;
+    background: url('../../../assets/LayoutsPic/4.png') no-repeat;
+}
