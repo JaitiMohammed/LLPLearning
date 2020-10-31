@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 export const Menu = () => {
   return (
-    <Navbar collapseOnSelect expand='lg' bg='light'>
+    <Navbar collapseOnSelect expand='lg' fixed='top'>
       <Navbar.Brand>
         <Link to='/home'>
           <img src={Logo} alt='logo' />
