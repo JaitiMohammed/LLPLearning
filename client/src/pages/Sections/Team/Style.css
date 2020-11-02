@@ -6,3 +6,10 @@
     background: url('../../../assets/LayoutsPic/3.png') no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width:768px) {
+    #team {
+        background: url('../../../assets//LayoutsPic/T2.png') no-repeat;
+        background-size: cover;
+    }
+}

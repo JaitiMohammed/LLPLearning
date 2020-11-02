@@ -4,6 +4,13 @@
     min-height: 785px;
     width: 100%;
     padding-top: 9em;
-    background: url('../../../assets//LayoutsPic/1.png') no-repeat ;
+    background: url('../../../assets//LayoutsPic/1.png') no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+    #hero {
+        background: url('../../../assets//LayoutsPic/T1.png') no-repeat;
+        background-size: cover;
+    }
 }

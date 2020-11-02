@@ -21,6 +21,8 @@ export const InfoSection = ({
   lightText,
   topline,
   Description,
+  outlineLight,
+  RouteButton,
 }) => {
   return (
     <>
@@ -32,9 +34,9 @@ export const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topline}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{Description}</Subtitle>
-                <Link to='register'>
+                <Link to={RouteButton}>
                   <Button
-                    variant='outline-light'
+                    variant={outlineLight}
                     size='lg'
                     style={{ boxShadow: "5px rgba(0, 0, 0, 0.05)" }}
                   >

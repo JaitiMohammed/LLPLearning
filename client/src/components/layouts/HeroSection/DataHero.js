@@ -1,4 +1,6 @@
 export const DataHero = {
+  RouteButton: "register",
+  outlineLight: "outline-light",
   lightBg: false,
   imgStart: "",
   lightTopLine: true,

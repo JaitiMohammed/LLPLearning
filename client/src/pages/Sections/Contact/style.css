@@ -1,7 +1,14 @@
 #contact {
     position: relative;
     overflow: hidden;
-    min-height: 700px;
+    min-height: 670px;
     background: url('../../../assets/LayoutsPic/5.png') no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+    #contact {
+        background: url('../../../assets//LayoutsPic/T3.png') no-repeat;
+        background-size: cover;
+    }
 }
