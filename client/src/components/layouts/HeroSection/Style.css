@@ -1,7 +1,9 @@
 #hero {
     position: relative;
     overflow: hidden;
-    min-height: 650px;
+    min-height: 785px;
     width: 100%;
-    background: url('../../../assets//LayoutsPic/1.png') no-repeat;
+    padding-top: 9em;
+    background: url('../../../assets//LayoutsPic/1.png') no-repeat ;
+    background-size: cover;
 }

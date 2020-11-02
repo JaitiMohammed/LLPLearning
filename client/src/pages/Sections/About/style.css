@@ -1,6 +1,11 @@
 #about {
     position: relative;
     overflow: hidden;
-    min-height: 650px;
-    background:url('../../../assets/LayoutsPic/2.png');
+    min-height: 700px;
+    background: url('../../../assets/LayoutsPic/2.png');
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+   
 }

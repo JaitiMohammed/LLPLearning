@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../../assets/OthersPictures/logo.png";
 import "./Style.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 export const Menu = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
-    <Navbar collapseOnSelect expand='lg' fixed='top'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      fixed='top'
+      className={navbar ? "navbar active" : "navbar"}
+    >
       <Navbar.Brand>
         <Link to='/home'>
           <img src={Logo} alt='logo' />
@@ -16,9 +32,13 @@ export const Menu = () => {
       <Navbar.Collapse id='responsive-navbar-nav' bg='light'>
         <Nav className='mr-auto menu-left'>
           <Nav.Link>
-            <Link to='/home' style={{ color: "black" }}>
+            <NavLink
+              to='/home'
+              style={{ color: "black" }}
+              activeClassName='navbar__link--active'
+            >
               Home
-            </Link>
+            </NavLink>
           </Nav.Link>
           <Nav.Link>
             <HashLink to='#about' style={{ color: "black" }}>
@@ -31,17 +51,25 @@ export const Menu = () => {
             </HashLink>
           </Nav.Link>
           <Nav.Link>
-            <Link to='/blog' style={{ color: "black" }}>
+            <NavLink
+              activeClassName='navbar__link--active'
+              to='/blog'
+              style={{ color: "black" }}
+            >
               Blog
-            </Link>
+            </NavLink>
           </Nav.Link>
           <Nav.Link>
-            <Link to='/courses' style={{ color: "black" }}>
+            <NavLink
+              activeClassName='navbar__link--active'
+              to='/courses'
+              style={{ color: "black" }}
+            >
               Courses
-            </Link>
+            </NavLink>
           </Nav.Link>
           <Nav.Link>
-            <HashLink to='#contact-us' style={{ color: "black" }}>
+            <HashLink to='#contact' style={{ color: "black" }}>
               Contact us
             </HashLink>
           </Nav.Link>
